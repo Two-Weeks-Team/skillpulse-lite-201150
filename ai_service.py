@@ -3,6 +3,7 @@ import json
 import re
 import asyncio
 import httpx
+from typing import Dict, Any
 
 API_URL = "https://inference.do-ai.run/v1/chat/completions"
 TOKEN = os.getenv("DIGITALOCEAN_INFERENCE_KEY", "")
