@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background: #F0F0F0;
+  --color-foreground: #212529;
+  --color-card: #ffffff;
+  --color-muted: #e2e8f0;
+  --color-border: #cbd5e1;
+  --color-primary: #0A9D8F; /* teal */
+  --color-accent: #F4A261; /* orange */
+  --color-success: #2A9D8F;
+  --color-warning: #E63946;
+  --radius: 8px;
+  --shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(circle at top left, var(--color-primary) 0%, var(--color-background) 70%);
+}
+
+/* Custom utility for confetti (simple placeholder) */
+@keyframes confetti-fade {
+  from { opacity: 0; transform: scale(0.5); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.confetti {
+  animation: confetti-fade 0.8s ease-out forwards;
+}
